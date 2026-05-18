@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSF Services</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background-color:#f4f4f4;
+      font-family:Arial, Helvetica, sans-serif;
+      color:#222;
+    }
+
+    /* HEADER */
+
+    header{
+      background-color:darkblue;
+      padding:15px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:55px;
+border-radius:10px;
+}
+
+.logo h2{
+color:white;
+font-size:20px;
+}
+
+
+    
+
+    /* HERO */
+
+    .hero{
+      width:100%;
+      height:300px;
+
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('bacgroundimage.png');
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:45px;
+    }
+
+    .hero p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
+    /* MAIN */
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+      margin-top:40px;
+      margin-bottom:40px;
+    }
+
+    .services-box{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .services-box h2{
+      text-align:center;
+      color:darkblue;
+      margin-bottom:30px;
+      font-size:35px;
+    }
+
+    /* TABLE */
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      overflow:hidden;
+      border-radius:15px;
+    }
+
+    th{
+      background-color:darkred;
+      color:white;
+      padding:18px;
+      font-size:18px;
+    }
+
+    td{
+      padding:18px;
+      border:1px solid #ddd;
+      font-size:17px;
+    }
+
+    tr:nth-child(even){
+      background-color:#f2f2f2;
+    }
+
+    tr:hover{
+      background-color:#e8e8e8;
+    }
+
+    /* EXTRA */
+
+    .join-box{
+      margin-top:40px;
+      background:#eeeeee;
+      padding:25px;
+      border-radius:15px;
+      text-align:center;
+    }
+
+    .join-box h3{
+      color:darkblue;
+      margin-bottom:10px;
+    }
+
+    .join-box p{
+      margin-bottom:20px;
+      font-size:17px;
+    }
+
+    .join-btn{
+      text-decoration:none;
+      background:darkred;
+      color:white;
+      padding:12px 25px;
+      border-radius:10px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .join-btn:hover{
+      background:black;
+    }
+
+    /* SOCIALS */
+
+    .socials{
+      margin-top:35px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      text-decoration:none;
+      background:darkblue;
+      color:white;
+      padding:12px 20px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      background:black;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background-color:darkblue;
+      color:white;
+      text-align:center;
+      padding:0px;
+      height: 35px;
+      width: 100%;  
+    }
+
+    footer h4{
+      margin-bottom:0px;
+      margin-top: 150px;
+    }
+
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .hero p{
+        font-size:15px;
+      }
+
+      th, td{
+        font-size:14px;
+        padding:12px;
+      }
+
+      .logo h2{
+        font-size:18px;
+      }
+
+    }
+
+    /* SOCIALS */
+
+.socials{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.socials a{
+background:darkred;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.socials a:hover{
+background:black;
+}
+
+/* HEADER */
+
+header{
+background:darkblue;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+/* NAVBAR */
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- NAVBAR -->
+<header>
+  <nav>
+
+    <a href="ReCreateGSF.html">HOME</a>
+    <a href="GSFFamilySong.html">FAMILY SONG</a>
+    <a href="GSFExecutives.html">EXECUTIVES</a>
+    <a href="GsfResources.html">RESOURCES</a>
+
+  </nav>
+</header>
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div>
+
+      <h1>FELLOWSHIP SERVICES</h1>
+
+      <p>
+        Join us as we worship, grow and fellowship together
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- MAIN -->
+
+  <div class="container">
+
+    <div class="services-box">
+
+      <h2>WORSHIP WITH US</h2>
+
+      <table>
+
+        <tr>
+
+          <th>DAY</th>
+          <th>SERVICE</th>
+          <th>TIME</th>
+
+        </tr>
+
+        <tr>
+
+          <td>SUNDAY</td>
+          <td>SUNDAY SERVICE</td>
+          <td>7:40AM - 11:00AM</td>
+
+        </tr>
+
+        <tr>
+
+          <td>WEDNESDAY</td>
+          <td>BIBLE STUDY</td>
+          <td>5:00PM - 7:00PM</td>
+
+        </tr>
+
+        <tr>
+
+          <td>FRIDAY</td>
+          <td>PRAYER MEETING</td>
+          <td>5:00PM - 7:00PM</td>
+
+        </tr>
+
+      </table>
+
+      <!-- JOIN -->
+
+      <div class="join-box">
+
+        <h3>Become Part of Our Family</h3>
+
+        <p>
+          Come as you are, grow in Christ and leave a mark.
+        </p>
+
+        <a href="+234 814 045 9858" class="join-btn">JOIN GSF TODAY</a>
+
+      </div>
+
+      <!-- SOCIALS -->
+
+      <section class="section">
+  <h2>CONNECT WITH US</h2>
+  <div class="socials">
+    <a href="https://www.facebook.com/share/1DsHiXQxn7/">FACEBOOK</a>
+    <a href="https://x.com/gsf_fuoye">TWITTER</a>
+    <a href="https://www.instagram.com/gsffuoye?igsh=bTExaDR2eHF0cXIx">INSTAGRAM</a>
+    <a href="https://www.tiktok.com/@gsf.fuoye.oye.cha?_r=1&_t=ZS-96NS29xgvlF">TIKTOK</a>
+  </div>
+</section>       
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h4>&copy; 2025/2026 GSF FUOYE</h4>
+
+  </footer>
+
+</body>
+</html

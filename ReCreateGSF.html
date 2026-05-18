@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GSF FUOYE</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f4f4;
+color:#222;
+line-height:1.7;
+}
+
+/* HEADER */
+
+header{
+background:darkblue;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:55px;
+border-radius:10px;
+}
+
+.logo h2{
+color:white;
+font-size:20px;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('gsf-logo.png');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:20px;
+color:white;
+max-width:800px;
+}
+
+.hero-content h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:20px;
+}
+
+/* GENERAL SECTION */
+
+section{
+padding:60px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+color:darkblue;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:darkred;
+margin-bottom:10px;
+}
+
+/* SERVICES TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+th, td{
+border:1px solid #ddd;
+padding:15px;
+text-align:left;
+}
+
+th{
+background:darkred;
+color:white;
+}
+
+tr:nth-child(even){
+background:#f2f2f2;
+}
+
+/* FAMILY SONG */
+
+.song-box{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+font-size:20px;
+}
+
+/* RESOURCES */
+
+.resource{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.resource a{
+text-decoration:none;
+color:darkred;
+font-weight:bold;
+}
+
+/* SOCIALS */
+
+.socials{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.socials a{
+background:darkred;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.socials a:hover{
+background:black;
+}
+
+/* FOOTER */
+
+footer{
+background:darkblue;
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:35px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+nav{
+margin-top:15px;
+justify-content:center;
+}
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+
+<img src="gsf-logo.png" alt="gsf-logo">
+
+<h2>GSF FUOYE</h2>
+
+</div>
+
+<nav>
+
+<a href="ReCreateGSF.html">HOME</a>
+<a href="GSFServices.html">SERVICES</a>
+<a href="GSFFamilySong.html">FAMILY SONG</a>
+<a href="GSFExecutives.html">EXECUTIVES</a>
+<a href="GsfResources.html">RESOURCES</a>
+
+</nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>RAISING GODLY GEMS</h1>
+
+<p>
+Welcome to Gofamint Student Fellowship FUOYE Chapter.
+A family of believers committed to spirituality,
+academic excellence, discipleship, leadership,
+and kingdom impact.
+</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+    <p><strong style="font-size: 40px;">W</strong>elcome to <strong>Gofamint Student Fellowship [GSF] Oye Chapter</strong>, an arm of <bold>The Gospel Faith Mission International</bold>.
+        We are more than a community (tribes,culture,language,...) of believers, we are Godly <i>GEMS</i> raised to fulfil Christ's in our lives.We are dedicated to spiritual 
+        growth, academic excellence, and dicovery the hidden treasures within every student</p>
+        <h4>RAISING GODLY GEMS</h4><p>GSF Fuoye chapter, is more than just a campus christian  gathering group. We believe that every student is a gem in the making - PRECIOUS, UNIQUE & full of POTENTIAL. Our mission is to 
+          provide a spiritual atmosphere where these gems, are polished through the word of God, prayers, supports from fellowship brothers and sisters and discipleship.
+</p>
+</section>
+<div class="container">
+
+<h2 class="section-title">OUR CORE PILLARS</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<p style="color: black; font-size: large;"><strong style="color: darkblue;">SPIRITUALITY :</strong> Deepening our connection with God through prayer and word</p>
+          <p style="color: black; font-size: large;"><strong style="color: darkblue;">ACADEMIC :</strong>Striving for the highest standards in our studies as a form of worship - For God is to be seen also in our academics</p>
+          <p style="color: black; font-size: large;"><strong style="color: darkblue;">COMMUNITY :</strong>Buildig a family where every student is seen, heard and supported - A family christ will be referenced and proud of</p>
+
+
+<section class="section">
+  <h2>CONNECT WITH US</h2>
+  <div class="socials">
+    <a href="https://www.facebook.com/share/1DsHiXQxn7/">FACEBOOK</a>
+    <a href="https://x.com/gsf_fuoye">TWITTER</a>
+    <a href="https://www.instagram.com/gsffuoye?igsh=bTExaDR2eHF0cXIx">INSTAGRAM</a>
+    <a href="https://www.tiktok.com/@gsf.fuoye.oye.cha?_r=1&_t=ZS-96NS29xgvlF">TIKTOK</a>
+
+  </div>
+</section> 
+
+</body>
